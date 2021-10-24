@@ -29,3 +29,10 @@ Technologies used in this project:
 - Axon Server
 - Spring Boot
 
+---
+
+Axon Server
+
+1. Get it from https://axoniq.io/product-overview/axon-server
+2. Unzip it to the location of your choice.
+3. Navigate to the location & run it using the command ``` java -jar axonserver.jar ```
