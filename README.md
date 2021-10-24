@@ -36,3 +36,9 @@ Axon Server
 1. Get it from https://axoniq.io/product-overview/axon-server
 2. Unzip it to the location of your choice.
 3. Navigate to the location & run it using the command ``` java -jar axonserver.jar ```
+
+---
+
+H2 Console
+
+Go to : http://localhost:8081/h2-console/
