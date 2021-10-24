@@ -1,5 +1,10 @@
 # CQRS
 
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
+![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+
+---
+
 Project using CQRS pattern to build event-driven microservices.
 
 The Command and Query Responsibility Segregation (CQRS) is an architectural pattern where the main focus is to separate the way of reading and writing data. 
