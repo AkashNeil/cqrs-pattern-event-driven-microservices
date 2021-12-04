@@ -38,9 +38,13 @@ Technologies used in this project:
 
 Axon Server
 
-1. Get it from https://axoniq.io/product-overview/axon-server
-2. Unzip it to the location of your choice.
-3. Navigate to the location & run it using the command ``` java -jar axonserver.jar ```
+1. Get it from https://axoniq.io/download
+2. To run it :
+- Either :
+  - Unzip it to the location of your choice. 
+  - Navigate to the location & run it using the command ` java -jar axonserver.jar `
+- Or :
+  - Run it on Docker `docker run -d --name axonserver -p 8024:8024 -p 8124:8124 axoniq/axonserver`
 
 ---
 
