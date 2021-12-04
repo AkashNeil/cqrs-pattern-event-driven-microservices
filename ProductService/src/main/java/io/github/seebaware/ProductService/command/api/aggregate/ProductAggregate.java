@@ -23,22 +23,16 @@ public class ProductAggregate {
     @CommandHandler
     public ProductAggregate(CreateProductCommand createProductCommand) {
         // Perform validations here
-        ProductCreatedEvent productCreatedEvent =
-                new ProductCreatedEvent();
-
+        ProductCreatedEvent productCreatedEvent = new ProductCreatedEvent();
         BeanUtils.copyProperties(createProductCommand,productCreatedEvent);
-
         AggregateLifecycle.apply(productCreatedEvent);
-    }
-
-    public ProductAggregate() {
     }
 
     @EventSourcingHandler
     public void on(ProductCreatedEvent productCreatedEvent) {
-        this.quantity = productCreatedEvent.getQuantity();
-        this.productId = productCreatedEvent.getProductId();
-        this.price = productCreatedEvent.getPrice();
-        this.name = productCreatedEvent.getName();
+        this.quantity = productCreatedEvent.quantity();
+        this.productId = productCreatedEvent.productId();
+        this.price = productCreatedEvent.price();
+        this.name = productCreatedEvent.name();
     }
 }

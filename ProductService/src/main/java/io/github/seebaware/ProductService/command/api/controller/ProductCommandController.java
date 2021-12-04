@@ -26,9 +26,9 @@ public class ProductCommandController {
         CreateProductCommand createProductCommand =
                 CreateProductCommand.builder()
                         .productId(UUID.randomUUID().toString())
-                        .name(productRestModel.getName())
-                        .price(productRestModel.getPrice())
-                        .quantity(productRestModel.getQuantity())
+                        .name(productRestModel.name())
+                        .price(productRestModel.price())
+                        .quantity(productRestModel.quantity())
                         .build();
         return commandGateway.sendAndWait(createProductCommand);
     }
