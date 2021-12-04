@@ -45,7 +45,7 @@ Axon Server
   - Navigate to the location & run it using the command ` java -jar axonserver.jar `
 - Or :
   - Run it on Docker `docker run -d --name axonserver -p 8024:8024 -p 8124:8124 axoniq/axonserver`
-
+3. Go to 'localhost:8024' to see Axon Server running.
 ---
 
 H2 Console
